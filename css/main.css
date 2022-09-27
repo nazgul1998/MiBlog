@@ -1,0 +1,421 @@
+/*Roboto Slaf 400, 700
+  Roboto 400 500 700 900
+  Roboto Mono 400 500 700
+*/
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital@1&display=swap');
+
+*{
+  padding: 0;
+  margin: 0;
+
+  /*borrar estilos del naevgador*/
+  box-sizing: border-box;
+}
+
+body{
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 400;
+  background-color: #261d2c;
+}
+
+.home-body{
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+
+}
+
+/*HEADER*/
+.header{
+  width: 100%;
+  height: 140px;
+
+  /*grid eprmite estructurar en filas y culonas*/
+  display: grid;
+  /*crear nueva fila*/
+  grid-template-rows: 1fr 1fr; /*en este caso 2*/
+}
+
+.social{
+  background-color: #916cad;
+  width: 100%;
+  height: 50px;
+  display: grid;
+}
+.social-icons{
+  width: 250px;
+  height: auto;
+  /*flexbox: se debe colcoar flex en display para activarlo cada elemento ocupa lo necesario sin margenes*/
+  display: flex;
+  /*una vez activado pormos utilizar align items*/
+  align-items: center;
+  /*hace que ocupe todo el contenedor y los espacios los deja como margenes entre elementos*/
+  justify-content: space-between;
+  /*lelvar al cotnenedor al otro lado*/
+  justify-self: right;
+  margin-right: 50px;
+}
+
+.social-icons a{
+  color: #c7fba5;
+  font-size: 28px;
+}
+
+.social-icons a:hover{
+  opacity: 0.6;
+}
+
+/*NAV*/
+.nav{
+  /*para los dos contenedores*/
+  display: grid;
+  /*creamos las dos columnas*/
+  grid-template-columns: 1fr 1fr;
+  /*usamos en social 50px queda 90*/
+  height: 90px;
+}
+
+.nav-logo{
+  display: flex;
+  align-items: center;
+  /*flex start por defecto*/
+  justify-content: flex-start;
+  margin-left: 50px;
+}
+.nav-logo:hover{
+  opacity: 0.7;
+}
+
+.nav-link{
+  /*para aliniar nuestrosd elementos*/
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-right: 50px;
+}
+
+.nav-link a{
+  text-decoration: none;
+  color: #c7fba5;
+  border-bottom: 1px solid #c7fba5;
+}
+
+.nav-link a:hover{
+  opacity: 0.6;
+}
+
+/*MAIN HOME*/
+
+.home-main{
+  display: grid;
+  grid-template-columns: 1fr 4fr 1fr;
+  height: 100%;
+  background-image: url(../imgs/index.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.main-container{
+  display:grid;  
+  grid-column: 2; /*que se ubique en la segunda columna*/
+  justify-items: center;
+  height: 350px;
+  margin-top: 80px;
+}
+
+.main-container__text{
+  text-align: center;
+  font-size: 30px;
+  font-weight: 700;
+  letter-spacing: 10px;
+  word-spacing: 10px;
+  color: #c7fba5;
+}
+
+.main-container__link{
+  background-color: #916cad;
+  display: inline-block;
+  padding: 10px 20px;
+  text-decoration: none;
+  color: #c7fba5;
+  font-weight: 700;
+  font-size: 18px;
+  height: 45px;
+  border-radius: 10px;
+}
+
+.main-container__link:hover{
+  opacity: 0.6;
+}
+
+
+/*blogs*/
+.blogs-main{
+  display: grid;
+}
+
+.news{
+  background-color: #c7fba5;
+  padding: 10px 80px 40px;
+}
+
+.news-content{
+  display: grid;
+  grid-template-columns: 2fr 2fr;
+}
+
+.news-content h3{
+  font-size: 40px;
+  color: #261d2c;
+}
+
+.news-content img{
+  grid-column: 1;
+  height: 300px;
+  width: auto;
+  margin: 10px 0;
+}
+
+.news-info{
+  align-items: center;
+  color: #261d2c;
+  padding: 30px 20px
+}
+
+.news-info h2{
+  margin-top: 20px;
+  color: #916cad;
+}
+
+.news-info p{
+  margin: 30px 0;
+  text-align: justify;
+}
+
+.blogs-btn{
+  text-decoration: none;
+  color: #261d2c;
+  border: 1px solid #261d2c;
+  padding: 10px 15px;
+  font-size: 14px;
+  width: 100px;
+  border-radius: 10px;
+}
+.blogs-btn:hover{
+  opacity: 0.6;
+}
+
+
+
+/*POSTS*/
+
+.posts{
+  padding: 0 80px 40px;
+  color: #916cad;
+}
+.posts h3{
+  text-decoration: none;
+  border-bottom: 1px solid #c7fba5;
+  padding: 20px 0;
+  text-align: center;
+  color: #c7fba5;
+}
+
+.posts-blog{
+  display: inline-block;
+  padding: 15px;
+  max-width: 32%;
+  margin-bottom: 50px;
+}
+
+.posts-blog img{
+  width: 100%;
+}
+
+.posts-blog h4{
+  margin: 20px 0;
+  color: #c7fba5;
+}
+
+.posts-blog p{
+  margin-bottom: 35px;
+}
+
+.posts-blog a{
+  color: #c7fba5;
+  border-color: #c7fba5;
+}
+
+/*footer*/
+footer{
+  width: 100%;
+  height: 80px;
+  background-color: #261d2c;
+  border-top: 35px solid #261d2c;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #c7fba5;
+}
+
+footer p {
+  color: #261d2c;
+  text-align: center;
+  font-weight: 600;
+}
+
+
+/*blog post*/
+.main-blog{
+  padding: 0 80px 40px;
+}
+
+.main-blog__content img{
+  display: inline-block;
+  padding: 0 50px 40px;
+  width: 100%;
+}
+
+.blog-content__article{
+  padding: 0 80px 40px;
+  color: #916cad;
+}
+
+.blog-content__article h4{
+  border-bottom: 1px solid #c7fba5;
+  padding: 20px 0;
+  color: #c7fba5;
+}
+
+.blog-content__article h1{
+  margin: 20px 0;
+  font-size: 35px;
+  color: #c7fba5;
+}
+
+
+/*contacto*/
+.section-contact{
+  width: 100%;
+  background-color: #916cad;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 80px 50px;
+}
+
+.contact{
+  display: flex;
+  margin: 20px 0 20px 20px;
+}
+
+.contact img{
+  width: 100px;
+  display: inline-block;
+  padding: 10px;
+}
+
+.contact-info{
+  padding: 20px 0;
+  width: 300px;
+  color: #c7fba5;
+}
+
+
+.contact-info a{
+  text-decoration: none;
+  color: #c7fba5;
+  border-bottom: 1px solid #c7fba5;
+  padding-bottom: 5px;
+}
+.contact-info a:hover{
+  opacity: 0.7;
+}
+
+.contact-info p{
+  margin-top: 10px;
+  color: #261d2c;
+}
+
+
+
+/*profile*/
+.profile{
+  padding: 70px 100px;
+  background-color: #c7fba5;
+  margin-bottom: 5px;
+  display: flex;
+}
+
+.profile-info{
+  display: grid;
+}
+
+.profile-name{
+  color: #916cad;
+}
+
+
+.profile-bio{
+  color: #261d2c;
+}
+
+.profile-img{
+  display: flex;
+  justify-content: center;
+  background-size: cover;
+  width: 100%;
+}
+
+.profile img{
+  display: inline-block;
+  width: 320px;
+  height: auto;
+  margin-right: 30px;
+}
+
+.projects-container{
+  padding: 0 80px 40px 80px;
+}
+
+.projects-container h3{
+  border-bottom: 1px solid #c7fba5;
+  padding: 20px 0;
+  text-align: center;
+  color: #c7fba5;
+}
+
+.project{
+  display: inline-block;
+  padding: 15px;
+  max-width: 32%;
+  margin-bottom: 50px;
+}
+
+.project img{
+  width: 80%;
+}
+
+.project h4{
+  margin: 20px 0;
+  color: #c7fba5;
+  text-align: center;
+}
+
+.project p{
+  margin-bottom: 35px;
+  color: #916cad;
+  display: flex;
+  justify-content: center;
+  text-align: center;  
+}
+
+.project a{
+  text-decoration: none;
+  color: #c7fba5;
+  display: flex;
+  justify-content: center;
+  letter-spacing: 5px;
+}
