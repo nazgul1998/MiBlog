@@ -197,8 +197,8 @@ body{
 
 .blogs-btn{
   text-decoration: none;
-  color: #261d2c;
-  border: 1px solid #261d2c;
+  color: #916cad;
+  border: 1px solid #916cad;
   padding: 10px 15px;
   font-size: 14px;
   width: 100px;
@@ -418,4 +418,303 @@ footer p {
   display: flex;
   justify-content: center;
   letter-spacing: 5px;
+}
+
+
+
+@media screen and (max-width: 800px) {
+  /*HEADER*/
+  .header{
+    display: block;
+  }
+
+  .social{
+    display: block;
+  }
+  .social-icons{
+    width: 100%;
+    display: flex;
+    text-align: center;
+  }
+
+  .social-icons a{
+    margin: 10px 10px;
+  }
+
+  .social-icons a:hover{
+    opacity: 0.6;
+  }
+
+
+    /*MAIN HOME*/
+
+  .main-container{
+    margin-top: 30px;
+  }
+
+  .main-container__link{
+    margin-top: 50px;
+  }
+
+
+
+/*blogs*/
+.blogs-main{
+  display: block;
+}
+
+.news{
+  width: 100%;
+  margin: 0;
+  padding: 10px;
+}
+
+.news-content{
+  display: block;
+}
+
+.news-content h3{
+  font-size: 25px;
+}
+
+.news-content img{
+  width: 100%;
+  height: auto;
+}
+
+.news-info{
+  padding: 10px 20px;
+  display: grid;
+  grid-template-rows: 1fr 4fr 2fr;
+}
+
+.news-info h2{
+  margin: 0px;
+}
+
+.news-info p{
+  text-align: justify;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.news-content__buttons{
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.blogs-btn:hover{
+  opacity: 0.6;
+}
+
+
+
+
+  /*POSTS*/
+  .posts{
+    color: #916cad;
+    display: block;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+  }
+  .posts h3{
+    padding-top: 15px;
+    padding-bottom: 5px;
+    border-bottom: none;
+  }
+
+  .posts-blog{
+    display: grid;
+    padding: 0px;
+    max-width: 100%;
+    margin-bottom: 50px;
+  }
+
+  .posts-blog img{
+    width: 100%;
+  }
+
+  .posts-blog h4{
+    margin: 20px 0;
+    color: #c7fba5;
+  }
+
+  .posts-blog p{
+    margin-bottom: 35px;
+  }
+
+ /*footer*/
+  footer{
+    border-top: 35px solid #261d2c;
+  }
+
+
+
+    
+  /*blog post*/
+  .main-blog{
+    padding: 0;
+    margin: 0;
+  }
+
+  .main-blog__content img{
+    display: block;
+    padding: 10px 20px;
+  }
+
+  .blog-content__article{
+    padding: 0 40px;
+    text-align: justify;
+    margin-bottom: 45px;
+  }
+
+  .blog-content__article h4{
+    border-bottom: 1px solid #c7fba5;
+    padding: 20px 0;
+    color: #c7fba5;
+  }
+
+  .blog-content__article h1{
+    margin: 20px 0;
+    font-size: 30px;
+    color: #916cad;
+  }
+
+
+    
+  /*contacto*/
+  .section-contact{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    padding: 0;
+    width: 100%;
+    margin: 0;
+  }
+
+  .contact{
+    display: block;
+    margin: 10px 10px;
+    text-align: justify;
+  }
+
+
+  .contact-img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+  }
+
+  .contact img{
+    width: 70px;
+    height: auto;
+    padding: 0;
+    display: block;
+  }
+
+  .contact-info{
+    max-width: 100%;
+    text-align: center;
+    margin: 0;
+    padding: 0;    
+  }
+
+
+  .contact-info a{
+    text-decoration: none;
+    color: #261d2c;
+    border-bottom: 1px solid #261d2c;
+    padding-bottom: 5px;
+  }
+
+
+
+
+
+  
+  /*profile*/
+  .profile{
+    padding: 20px;
+    background-color: #c7fba5;
+    margin-bottom: 5px;
+    display: block;
+  }
+
+  .profile-info{
+    display: grid;
+  }
+
+  .profile-name{
+    color: #916cad;
+    text-align: center;
+    margin-top: 10px;
+  }
+
+
+  .profile-bio{
+    color: #261d2c;
+    text-align: justify;
+    padding: 0px 20px;
+  }
+
+
+  .profile img{
+    width: 100%;
+    height: auto;
+    margin: 0;
+  }
+
+  .projects-container{
+    padding: 10px 20px;
+  }
+
+  .projects-container h3{
+    padding-top: 10px;
+    padding-bottom: 5px;
+  }
+
+  .project{
+    display: inline-block;
+    padding: 15px;
+    max-width: 48%;
+    margin-bottom: 50px;
+  }
+
+  .project-img{
+    display: grid;
+    grid-template-columns: 10% 80% 10%;
+    width: 100%;
+    height: auto;
+  }
+
+  .project img{
+    width: 100%;
+    grid-column: 2;
+  }
+
+  .project h4{
+    margin: 0;
+    color: #c7fba5;
+    text-align: center;
+  }
+
+  .project p{
+    margin-bottom: 35px;
+    color: #916cad;
+    display: flex;
+    justify-content: center;
+    text-align: justify;  
+  }
+
+  .project a{
+    text-decoration: none;
+    color: #c7fba5;
+    display: flex;
+    justify-content: center;
+    letter-spacing: 5px;
+  }
+
+
 }
