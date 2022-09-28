@@ -258,7 +258,7 @@ footer{
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #c7fba5;
+  background-color: #916cad;
 }
 
 footer p {
@@ -281,7 +281,7 @@ footer p {
 
 .blog-content__article{
   padding: 0 80px 40px;
-  color: #916cad;
+  color: #c7fba5;
 }
 
 .blog-content__article h4{
@@ -293,7 +293,7 @@ footer p {
 .blog-content__article h1{
   margin: 20px 0;
   font-size: 35px;
-  color: #c7fba5;
+  color: #916cad;
 }
 
 
@@ -326,8 +326,8 @@ footer p {
 
 .contact-info a{
   text-decoration: none;
-  color: #c7fba5;
-  border-bottom: 1px solid #c7fba5;
+  color: #261d2c;
+  border-bottom: 1px solid #261d2c;
   padding-bottom: 5px;
 }
 .contact-info a:hover{
@@ -336,7 +336,7 @@ footer p {
 
 .contact-info p{
   margin-top: 10px;
-  color: #261d2c;
+  color: #c7fba5;
 }
 
 
