@@ -6,22 +6,27 @@ Cuenta con los siguientes apartados: "sobre mí", "publicaciones de blog", "publ
 ## Capturas
 
 > Home
+
 ![Image text](./md/home.png)
 
 
 >Sobre mí
+
 ![Image text](./md/about_me.png)
 
 
 >Blog
+
 ![Image text](./md/blogs.png)
 
 
 >Blog responsivo
+
 ![Image text](./md/blogs-responsive.png)
 
 
 >Entrada en específico
+
 ![Image text](./md/blog.png)
 
 
